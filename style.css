@@ -1,0 +1,53 @@
+/* [Requirement] Section 1: Layout Fix */
+/* Prevents boxes from resizing when adding padding/borders */
+* {
+    box-sizing: border-box; [cite: 23]
+}
+
+/* 1. Amazon Prime Video Dark Background */
+body {
+    background: radial-gradient(circle at center, #1a242f 0%, #0f171e 100%);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* 2. The Prime Style Card */
+.card {
+    background-color: #1a242f; 
+    width: 350px;
+    border-radius: 8px; 
+    text-align: left; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-bottom: 4px solid #00a8e1;
+
+    /* [Requirement] Visualize Border: Add the boundary line */
+    border: 2px solid #333; [cite: 33]
+
+    /* [Requirement] Internal Breathing Space: Updated to 20px */
+    padding: 20px; [cite: 33]
+}
+
+/* 3. The Name and Bio Spacing */
+/* [Requirement] Social Distancing: Separate text from other elements */
+#profile-name, p {
+    margin-bottom: 20px; [cite: 36]
+    color: #00a8e1; /* Prime Blue Accent */
+}
+
+/* 4. Button Spacing */
+.action-button {
+    background-color: #00a8e1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    /* [Requirement] Separate your buttons */
+    margin-right: 15px; 
+}
